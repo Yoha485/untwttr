@@ -1,0 +1,22 @@
+$secondary-color: #343e45;
+
+.headline {
+  margin-top: 22px;
+  padding: 16px;
+  background-color: $secondary-color;
+}
+
+.headlineContent {
+  margin: 10px 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) {
+  .headlineContent {
+    margin: 10px 0 28px 0;
+  }
+}

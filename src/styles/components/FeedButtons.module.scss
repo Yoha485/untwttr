@@ -1,0 +1,29 @@
+$primary-color: #0a8ceb;
+
+.feedButtons {
+  margin-top: 11px;
+  padding: 22px 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0px;
+
+  background-color: #01080e;
+}
+
+@media only screen and (min-width: 1200px) {
+  .feedButtons {
+    position: static;
+  }
+}
+
+.sort {
+  display: flex;
+  gap: 20px;
+}
+
+.createOwnBot {
+  color: $primary-color;
+}

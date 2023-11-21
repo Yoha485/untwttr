@@ -1,0 +1,125 @@
+$primary-color: #0a8ceb;
+$secondary-color: #343e45;
+$background-color: #01080e;
+
+body {
+  background-color: $background-color;
+  color: #fff;
+}
+
+body p,
+body textarea {
+  font-family: var(--font-sudo);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+body .bodyTitle {
+  font-weight: 900;
+  line-height: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.meta {
+  font-family: var(--font-sudo);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: auto;
+  text-transform: uppercase;
+}
+
+.aux {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button {
+  border-radius: 1px;
+}
+
+button.primary {
+  background-color: $primary-color;
+  min-width: 140px;
+  min-height: 40px;
+}
+
+button.secondary {
+  background-color: $secondary-color;
+  min-width: 140px;
+  min-height: 40px;
+}
+
+textarea {
+  border: none;
+  border-radius: 2px;
+  padding: 13px;
+  color: $background-color;
+  outline: none;
+  resize: vertical;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+  body p,
+  body textarea {
+    font-family: var(--font-sudo);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  body .bodyTitle {
+    font-weight: 900;
+    line-height: auto;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  button.primary {
+    background-color: $primary-color;
+    min-width: 140px;
+    min-height: 50px;
+  }
+
+  button.secondary {
+    background-color: white;
+    color: $primary-color;
+    min-width: 140px;
+    min-height: 50px;
+  }
+}

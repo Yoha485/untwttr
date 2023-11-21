@@ -1,0 +1,63 @@
+.buttonsMobile {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 32px);
+  bottom: 20px;
+  border-bottom: none;
+}
+
+.buttonsMobile button {
+  width: 173px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .buttonsMobile {
+    display: none;
+  }
+}
+
+.buttonsDesktop {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.primaryColor {
+  color: #0a8ceb;
+}
+
+@media only screen and (min-width: 1200px) {
+  .buttonsDesktop {
+    display: flex;
+  }
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.chart > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart .profilePictureAndUsername {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .chart {
+    row-gap: 0;
+  }
+
+  .chart > div {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+    padding: 9px 0;
+  }
+}

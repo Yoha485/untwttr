@@ -1,0 +1,70 @@
+.reply {
+  padding-left: 15px;
+
+  display: flex;
+}
+
+.reply > div {
+  width: 100%;
+}
+
+.reply {
+  .meta {
+    margin-bottom: 31px;
+  }
+
+  .authorAndLikes,
+  .profileImage {
+    margin-top: 31px;
+  }
+}
+
+.reply::before {
+  content: '';
+  width: 1px;
+  background-color: white;
+  opacity: 50%;
+  transform: translateX(26px);
+  z-index: -1;
+}
+
+.reply:last-child:before {
+  height: 40px;
+}
+
+.profileImage {
+  margin-right: 12px;
+}
+
+.authorAndLikes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes {
+  display: flex;
+  gap: 8px;
+}
+
+.likes > div {
+  margin: 6px 6px 0 6px;
+  cursor: pointer;
+}
+
+.likes h3 {
+  cursor: default;
+}
+
+.replyContent {
+  margin: 9px 0 10px 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.authorAndLikes > h3,
+.profileImage {
+  cursor: pointer;
+}
